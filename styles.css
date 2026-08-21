@@ -41,6 +41,11 @@ h2 { font-size: clamp(3rem, 6vw, 6rem); }
 .card h3 { margin-top: auto; font-size: 1.8rem; }
 .card p { max-width: 280px; color: var(--muted); font-size: .92rem; }
 .tag { align-self: flex-start; margin-top: 12px; color: var(--muted); font-size: .72rem; }
+.notes-card h3 { margin-top: 74px; }
+.notes-list { margin-top: 24px; display: grid; gap: 16px; }
+.note { display: block; padding-top: 14px; border-top: 1px solid var(--line); }
+.note span { display: block; margin-bottom: 6px; color: var(--muted); font-size: .68rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+.note strong { display: block; max-width: 320px; font-size: .92rem; font-weight: 500; line-height: 1.45; }
 
 .contact h2 { margin-bottom: 42px; }
 .email { display: inline-block; font-size: clamp(1.35rem, 3vw, 2.4rem); font-family: 'Space Grotesk', sans-serif; letter-spacing: -.04em; border-bottom: 1px solid var(--ink); }
@@ -57,5 +62,6 @@ footer { display: flex; justify-content: space-between; padding: 26px 6vw; color
   .split, .cards { grid-template-columns: 1fr; }
   .cards { gap: 1px; }
   .card { min-height: 240px; }
+  .notes-card h3 { margin-top: 48px; }
   footer { padding: 24px 7vw; }
 }
