@@ -1,0 +1,8 @@
+{
+  "name": "ricardo-giesta-site",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "mkdir -p dist/server && cp index.html styles.css logo.svg dist/ && cp -R work dist/ && printf '%s\\n' 'export default { async fetch() { return new Response(\"Not Found\", { status: 404 }); } };' > dist/server/index.js"
+  }
+}
